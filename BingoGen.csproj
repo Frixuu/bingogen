@@ -1,10 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <ToolCommandName>bingogen</ToolCommandName>
-    <PackAsTool>True</PackAsTool>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <PackageId>BingoGen</PackageId>
-    <PackageVersion>1.0.0.0</PackageVersion>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ToolCommandName>bingogen</ToolCommandName>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <PackAsTool>True</PackAsTool>
+        <PackageId>BingoGen</PackageId>
+        <PackageVersion>1.0.1</PackageVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="PdfSharpCore" Version="1.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Remove="Fonts/OpenSans-Regular.ttf" />
+        <Content Include="words.txt" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="Fonts/OpenSans-Regular.ttf" />
+    </ItemGroup>
 </Project>
