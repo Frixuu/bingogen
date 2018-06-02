@@ -3,8 +3,11 @@ This project was created to test [new .NET Core feature - global tools](https://
 It shows how .NET handles dependencies and tools' resources, embedded or copied to output directory.
 
 This simple app takes words from a .txt file, shuffles them, creates a 5x5 bingo card and saves it to PDF.
-## Prerequsites
+## Prerequisites
 - .NET Core SDK 2.1.300 or newer
+- Make sure your PATH includes the tools' directory (```$HOME/.dotnet/tools``` on Linux/macOS or ```%USERPROFILE%\.dotnet\tools``` on Windows)
+## Install from NuGet (recommended)
+```dotnet tool install -g bingogen```
 ## Install from source
 1. Clone this repo.
 2. Create a package: ```dotnet pack --output ./```
