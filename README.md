@@ -11,11 +11,11 @@ This simple app takes words from a .txt file, shuffles them, creates a 5x5 bingo
 ## Install from source
 1. Clone this repo.
 2. Create a package: ```dotnet pack --output ./```
-3. Install package from local source: ```dotnet tool install -g bingogen --add-source ./```
+3. Install package from local source: ```dotnet tool install -g bingogen --add-source "$PWD"```
 
-Note: For RC1 use ```--source-feed``` instead of ```--add-source```.
+Note: 2.1 RC1 doesn't understand ```--add-source```. Use ```--source-feed``` instead.
 
-You may also want to use ```"%cd%"``` (for cmd) or ```${pwd}``` (for PowerShell) instead of ```./```
+If you're on Windows, you may also want to use ```"%cd%"``` (for cmd) or ```${pwd}``` (for PowerShell) instead of ```"$PWD"```.
 ## Usage
 ```bingogen [input file] [title] [output file]```
 
