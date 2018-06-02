@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ToolCommandName>bingogen</ToolCommandName>
+    <PackAsTool>True</PackAsTool>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageId>BingoGen</PackageId>
+    <PackageVersion>1.0.0.0</PackageVersion>
+  </PropertyGroup>
+</Project>
